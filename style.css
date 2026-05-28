@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#07070d;
+  color:white;
+  min-height:100vh;
+}
+
+.topo{
+  padding:30px 20px;
+  text-align:center;
+}
+
+.topo h1{
+  font-size:32px;
+  color:#b026ff;
+  text-shadow:0 0 20px #b026ff;
+}
+
+.topo p{
+  color:#999;
+  margin-top:10px;
+}
+
+.container{
+  width:100%;
+  padding:20px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#11111b;
+  border:1px solid #2a2a40;
+  border-radius:20px;
+  overflow:hidden;
+
+  transition:.3s;
+  box-shadow:0 0 20px rgba(176,38,255,.15);
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#b026ff;
+
+  box-shadow:0 0 25px rgba(176,38,255,.5);
+}
+
+.card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+}
+
+.card h2{
+  font-size:18px;
+  padding:15px 15px 5px;
+}
+
+.card span{
+  display:block;
+  padding:0 15px;
+  color:#b026ff;
+  font-weight:600;
+}
+
+.card button{
+  width:calc(100% - 30px);
+  margin:15px;
+
+  height:45px;
+
+  border:none;
+  border-radius:12px;
+
+  background:#b026ff;
+  color:white;
+
+  font-weight:600;
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.card button:hover{
+  background:#c14dff;
+}
+
+.modal{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.7);
+
+  display:none;
+  align-items:center;
+  justify-content:center;
+
+  padding:20px;
+}
+
+.modal-box{
+  width:100%;
+  max-width:400px;
+
+  background:#11111b;
+
+  border-radius:20px;
+
+  padding:25px;
+
+  border:1px solid #2a2a40;
+}
+
+.modal-box h2{
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.modal-box input{
+  width:100%;
+  height:50px;
+
+  margin-bottom:15px;
+
+  border:none;
+  outline:none;
+
+  background:#1a1a28;
+
+  border-radius:12px;
+
+  padding:0 15px;
+
+  color:white;
+}
+
+.modal-box button{
+  width:100%;
+  height:50px;
+
+  border:none;
+  border-radius:12px;
+
+  background:#b026ff;
+  color:white;
+
+  font-weight:600;
+  cursor:pointer;
+}
